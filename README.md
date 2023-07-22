@@ -20,7 +20,7 @@ python3 java_get_ast.py source.code ast.json
 In Model file, the `RUN.py` enables to train the model. We evaluate the quality of the generated summaries using four evaluation metrics.
 Train and test model:  
 ```
-python3 _main_.py
+python RUN.py
 ```
 The nlg-eval can be set up in the following way, detail in [here](https://github.com/Maluuba/nlg-eval).  
 Install Java 1.8.0 (or higher).  
