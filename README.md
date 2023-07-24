@@ -1,7 +1,7 @@
 # MUTS: Source Code Summarization with Multi-Scale Structural Guided Transformer
 We public the source code, datasets and results for the MUTS.
 # Datasets
-In the MUTS, we use two large-scale datasets for experiments, including one Java and one Python datasets. In data file, we give the three datasets, which obtain from following paper. If you want to train the model, you must download the datasets.
+In the MUTS, we use two large-scale datasets for experiments, including one Java and one Python datasets. In data file, we give the two datasets, which obtain from following paper. If you want to train the model, you must download the datasets.
 ## PBD(Python Barone) dataset
 * paper: https://arxiv.org/abs/1707.02275
 * data: https://github.com/EdinburghNLP/code-docstring-corpus
@@ -14,7 +14,7 @@ MUTS uses ASTs and source code modalities, which uses the [JDK](http://www.eclip
 In Data-pre file, the `java_get_ast.py` generates ASTs for two Java datasets and `python_get_ast.py` generates ASTs for Python functions. You can run the following command：
 
 ```
-python3 java_get_ast.py source.code ast.json
+python java_get_ast.py source.code ast.json
 ```
 # Train-Test
 In the Model file, the `RUN.py` enables to train the model. We evaluate the quality of the generated summaries using four evaluation metrics.
@@ -35,9 +35,7 @@ pip install git+https://github.com/Maluuba/nlg-eval.git@master
 # Requirements
 If you want to run the model, you will need to install the following packages.  
 ```
-pytorch 1.7.1  
-bert-serving-client 1.10.0  
-bert-serving-server 1.10.0  
+pytorch 1.7.1    
 javalang 0.13.0  
 nltk 3.5  
 networkx 2.5  
