@@ -2,9 +2,9 @@
 We public the source code, datasets and results for the MUTS.
 # Datasets
 In the MUTS, we use two large-scale datasets for experiments, including one Java and one Python datasets. In data file, we give the two datasets, which obtain from following paper. If you want to train the model, you must download the datasets.
-## PBD(Python Barone) dataset
-* paper: https://arxiv.org/abs/1707.02275
-* data: https://github.com/EdinburghNLP/code-docstring-corpus
+## PBD(Python Wan) dataset
+* paper: https://dl.acm.org/doi/abs/10.1145/3238147.3238206
+
 ## JHD(Java Hu) dataset
 * paper: https://xin-xia.github.io/publication/ijcai18.pdf
 * data: https://github.com/xing-hu/TL-CodeSum
